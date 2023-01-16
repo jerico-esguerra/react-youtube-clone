@@ -8,12 +8,12 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
   <Box
     sx={{
       boxShadow: 'none',
-      borderRadius: '20px',
+      borderRadius: '1.25rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      width: { xs: '356px', md: '320px' },
-      height: '326px',
+      width: { xs: '22.25rem', md: '20rem' },
+      height: '20.375rem',
       margin: 'auto',
       marginTop,
     }}
@@ -23,14 +23,14 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
         <CardMedia
           image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
           alt={channelDetail?.snippet?.title}
-          sx={{ borderRadius: '50%', height: '180px', width: '180px', mb: 2, border: '1px solid #e3e3e3' }}
+          sx={{ borderRadius: '50%', height: '11.25rem', width: '11.25rem', mb: 2, border: '0.0625rem solid #e3e3e3' }}
         />
         <Typography variant="h6">
           {channelDetail?.snippet?.title}{' '}
-          <CheckCircleIcon sx={{ fontSize: '14px', color: 'gray', ml: '5px' }} />
+          <CheckCircleIcon sx={{ fontSize: '0.875rem', color: 'gray', ml: '0.3125rem' }} />
         </Typography>
         {channelDetail?.statistics?.subscriberCount && (
-          <Typography sx={{ fontSize: '15px', fontWeight: 500, color: 'gray' }}>
+          <Typography sx={{ fontSize: '0.9375rem', fontWeight: 500, color: 'gray' }}>
             {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString('en-US')} Subscribers
           </Typography>
         )}
