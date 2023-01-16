@@ -5,3 +5,14 @@ body {
   box-sizing: border-box;
 }
 
+.search-bar {
+  border: none;
+  outline: none;
+  width: 21.875rem;
+}
+
+@media screen and (max-width: 37.5rem) {
+  .search-bar{
+    width:12.5rem;
+  }
+}
